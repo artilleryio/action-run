@@ -13,7 +13,7 @@ if [ -n "${ARTILLERY_BINARY_PATH}" ]; then
 
   ARTILLERY_BINARY="${ARTILLERY_BINARY_PATH}"
 else
-  ARTILLERY_BINARY="/home/node/artillery/bin/run"
+  ARTILLERY_BINARY="/usr/bin/artillery"
 fi
 
 # Run the tests.
