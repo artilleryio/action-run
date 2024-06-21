@@ -7,5 +7,8 @@ RUN npm install -g artillery artillery-engine-playwright && \
         rm -rf /ms-playwright/firefox* && \
         rm -rf /ms-playwright/webkit*
 
+RUN npm install dotenv --save
+RUN npm install chalk --save
+
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
